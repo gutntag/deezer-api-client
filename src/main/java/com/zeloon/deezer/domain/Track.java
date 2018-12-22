@@ -16,6 +16,7 @@
 package com.zeloon.deezer.domain;
 
 import java.util.Date;
+import java.util.List;
 
 public class Track {
 
@@ -23,6 +24,13 @@ public class Track {
     private Boolean readable;
     private String isrc;
     private String title;
+    private String title_short;
+    private String title_version;
+    private String share;
+    private boolean explicit_lyrics;
+    private List<String> contributors;
+    private boolean unseen;
+    private String release_date;
     private String link;
     private Integer duration;
     private Integer rank;
@@ -59,6 +67,62 @@ public class Track {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public String getTitle_short() {
+        return title_short;
+    }
+
+    public void setTitle_short(String title_short) {
+        this.title_short = title_short;
+    }
+
+    public String getTitle_version() {
+        return title_version;
+    }
+
+    public void setTitle_version(String title_version) {
+        this.title_version = title_version;
+    }
+
+    public String getShare() {
+        return share;
+    }
+
+    public void setShare(String share) {
+        this.share = share;
+    }
+
+    public boolean isExplicit_lyrics() {
+        return explicit_lyrics;
+    }
+
+    public void setExplicit_lyrics(boolean explicit_lyrics) {
+        this.explicit_lyrics = explicit_lyrics;
+    }
+
+    public String getRelease_date() {
+        return release_date;
+    }
+
+    public void setRelease_date(String release_date) {
+        this.release_date = release_date;
+    }
+
+    public List<String> getContributors() {
+        return contributors;
+    }
+
+    public void setContributors(List<String> contributors) {
+        this.contributors = contributors;
+    }
+
+    public boolean isUnseen() {
+        return unseen;
+    }
+
+    public void setUnseen(boolean unseen) {
+        this.unseen = unseen;
     }
 
     public Integer getDuration() {
@@ -103,7 +167,6 @@ public class Track {
 
     public String getType() {
         return type;
-
     }
 
     public Album getAlbum() {

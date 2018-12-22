@@ -15,15 +15,18 @@
  */
 package com.zeloon.deezer.domain;
 
+import java.util.List;
+
 public class Album {
 
     private Long id;
     private String title;
     private String upc;
     private String link;
-    private String cover;
+    private String cover, cover_small, cover_medium, cover_big, cover_xl;
     private String genre_id;
     private String label;
+    private String share;
     private Integer duration;
     private Integer fans;
     private Integer rating;
@@ -40,6 +43,9 @@ public class Album {
     private Genres genres;
     private String record_type;
     private String tracklist;
+    private List<String> contributors;
+    private boolean explicit_lyrics;
+
 
     public Long getId() {
         return id;
@@ -223,5 +229,61 @@ public class Album {
 
     public void setTracklist(String tracklist) {
         this.tracklist = tracklist;
+    }
+
+    public String getCover_small() {
+        return cover_small;
+    }
+
+    public void setCover_small(String cover_small) {
+        this.cover_small = cover_small;
+    }
+
+    public String getCover_medium() {
+        return cover_medium;
+    }
+
+    public void setCover_medium(String cover_medium) {
+        this.cover_medium = cover_medium;
+    }
+
+    public String getCover_big() {
+        return cover_big;
+    }
+
+    public void setCover_big(String cover_big) {
+        this.cover_big = cover_big;
+    }
+
+    public String getCover_xl() {
+        return cover_xl;
+    }
+
+    public void setCover_xl(String cover_xl) {
+        this.cover_xl = cover_xl;
+    }
+
+    public String getShare() {
+        return share;
+    }
+
+    public void setShare(String share) {
+        this.share = share;
+    }
+
+    public List<String> getContributors() {
+        return contributors;
+    }
+
+    public void setContributors(List<String> contributors) {
+        this.contributors = contributors;
+    }
+
+    public boolean isExplicit_lyrics() {
+        return explicit_lyrics;
+    }
+
+    public void setExplicit_lyrics(boolean explicit_lyrics) {
+        this.explicit_lyrics = explicit_lyrics;
     }
 }
