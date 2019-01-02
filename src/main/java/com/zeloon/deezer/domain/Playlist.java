@@ -37,6 +37,7 @@ public class Playlist {
     private String type;
     private Tracks tracks;
     private Integer nb_tracks;
+    private Integer fans;
 
     public Long getId() {
         return id;
@@ -156,5 +157,13 @@ public class Playlist {
 
     public void setNb_tracks(Integer nb_tracks) {
         this.nb_tracks = nb_tracks;
+    }
+
+    public Integer getFans() {
+        return fans;
+    }
+
+    public void setFans(Integer fans) {
+        this.fans = fans;
     }
 }
