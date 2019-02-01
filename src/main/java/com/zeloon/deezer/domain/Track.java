@@ -15,9 +15,16 @@
  */
 package com.zeloon.deezer.domain;
 
+import lombok.Getter;
+import lombok.Setter;
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
+
 import java.util.Date;
 import java.util.List;
 
+@Getter
+@Setter
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Track {
 
     private Long id;
@@ -45,196 +52,4 @@ public class Track {
     private String[] available_countries;
     private Date time_add;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Boolean getReadable() {
-        return readable;
-    }
-
-    public void setReadable(Boolean readable) {
-        this.readable = readable;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getTitle_short() {
-        return title_short;
-    }
-
-    public void setTitle_short(String title_short) {
-        this.title_short = title_short;
-    }
-
-    public String getTitle_version() {
-        return title_version;
-    }
-
-    public void setTitle_version(String title_version) {
-        this.title_version = title_version;
-    }
-
-    public String getShare() {
-        return share;
-    }
-
-    public void setShare(String share) {
-        this.share = share;
-    }
-
-    public boolean isExplicit_lyrics() {
-        return explicit_lyrics;
-    }
-
-    public void setExplicit_lyrics(boolean explicit_lyrics) {
-        this.explicit_lyrics = explicit_lyrics;
-    }
-
-    public String getRelease_date() {
-        return release_date;
-    }
-
-    public void setRelease_date(String release_date) {
-        this.release_date = release_date;
-    }
-
-    public List<String> getContributors() {
-        return contributors;
-    }
-
-    public void setContributors(List<String> contributors) {
-        this.contributors = contributors;
-    }
-
-    public boolean isUnseen() {
-        return unseen;
-    }
-
-    public void setUnseen(boolean unseen) {
-        this.unseen = unseen;
-    }
-
-    public Integer getDuration() {
-        return duration;
-    }
-
-    public void setDuration(Integer duration) {
-        this.duration = duration;
-    }
-
-    public Integer getRank() {
-        return rank;
-    }
-
-    public void setRank(Integer rank) {
-        this.rank = rank;
-    }
-
-    public String getPreview() {
-        return preview;
-    }
-
-    public void setPreview(String preview) {
-        this.preview = preview;
-    }
-
-    public Artist getArtist() {
-        return artist;
-    }
-
-    public void setArtist(Artist artist) {
-        this.artist = artist;
-    }
-
-    public String getLink() {
-        return link;
-    }
-
-    public void setLink(String link) {
-        this.link = link;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public Album getAlbum() {
-        return album;
-    }
-
-    public void setAlbum(Album album) {
-        this.album = album;
-    }
-
-    public String getIsrc() {
-        return isrc;
-    }
-
-    public void setIsrc(String isrc) {
-        this.isrc = isrc;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-
-    }
-
-    public Integer getTrack_position() {
-        return track_position;
-    }
-
-    public void setTrack_position(Integer track_position) {
-        this.track_position = track_position;
-    }
-
-    public Integer getDisk_number() {
-        return disk_number;
-    }
-
-    public void setDisk_number(Integer disk_number) {
-        this.disk_number = disk_number;
-    }
-
-    public Double getBpm() {
-        return bpm;
-    }
-
-    public void setBpm(Double bpm) {
-        this.bpm = bpm;
-    }
-
-    public Double getGain() {
-        return gain;
-    }
-
-    public void setGain(Double gain) {
-        this.gain = gain;
-    }
-
-    public String[] getAvailable_countries() {
-        return available_countries;
-    }
-
-    public void setAvailable_countries(String[] available_countries) {
-        this.available_countries = available_countries;
-    }
-
-    public Date getTime_add() {
-        return time_add;
-    }
-
-    public void setTime_add(Date time_add) {
-        this.time_add = time_add;
-    }
 }
