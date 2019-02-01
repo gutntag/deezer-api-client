@@ -32,6 +32,11 @@ public class Playlist {
     private Integer rating;
     private String link;
     private String picture;
+    private String picture_small;
+    private String picture_medium;
+    private String picture_big;
+    private String picture_xl;
+
     private String checksum;
     private Creator creator;
     private String type;
@@ -109,6 +114,38 @@ public class Playlist {
 
     public void setPicture(String picture) {
         this.picture = picture;
+    }
+
+    public String getPicture_medium() {
+        return picture_medium;
+    }
+
+    public void setPicture_medium(String picture) {
+        this.picture_medium = picture;
+    }
+
+    public String getPicture_small() {
+        return picture_small;
+    }
+
+    public void setPicture_small(String picture) {
+        this.picture_small = picture;
+    }
+
+    public String getPicture_big() {
+        return picture_big;
+    }
+
+    public void setPicture_big(String picture) {
+        this.picture_big = picture;
+    }
+
+    public String getPicture_xl() {
+        return picture_xl;
+    }
+
+    public void setPicture_xl(String picture) {
+        this.picture_xl = picture;
     }
 
     public String getChecksum() {
